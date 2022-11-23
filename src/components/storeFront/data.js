@@ -1,10 +1,3 @@
-// import tech from '../../assets/images/tech.jpg';
-// import clothes from '../../assets/images/clothing.jpg';
-// import food from '../../assets/images/food.jpg';
-import photoAlpaca from '../../assets/images/alpaca.jpeg';
-
-
-
 export const data = [
   {
     id: 0,
@@ -13,25 +6,110 @@ export const data = [
     category: "electronics",
     price: 600,
     inventory: 100,
-    image: photoAlpaca,
+    image: "https://images.pexels.com/photos/7047326/pexels-photo-7047326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 1,
-    name: "Arsenal Authentic Soccer Jersey",
-    description: "medium",
-    category: "clothing",
-    price: 100,
-    inventory: 1000,
-    // image: Arsenal,
+    name: "MacBook",
+    description: "Laptop",
+    category: "electronics",
+    price: 1500,
+    inventory: 100,
+    image: "https://images.pexels.com/photos/526895/pexels-photo-526895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 2,
-    name: "El Camion",
-    description: "The best food truck in Seattle",
+    name: "DJ Mixer",
+    description: "DJ turntables/mixer",
+    category: "electronics",
+    price: 600,
+    inventory: 100,
+    image: "https://images.pexels.com/photos/6648188/pexels-photo-6648188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+    id: 3,
+    name: "Xbox Series X",
+    description: "Game Console",
+    category: "electronics",
+    price: 600,
+    inventory: 100,
+    image: "https://images.pexels.com/photos/12719143/pexels-photo-12719143.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  },
+  {
+    id: 4,
+    name: "Plaided Blazer",
+    description: "medium",
+    category: "clothing",
+    price: 100,
+    inventory: 100,
+    image: "https://images.pexels.com/photos/4132651/pexels-photo-4132651.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 5,
+    name: "Pants Suite ",
+    description: "medium",
+    category: "clothing",
+    price: 50,
+    inventory: 100,
+    image: "https://images.pexels.com/photos/4937224/pexels-photo-4937224.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 6,
+    name: "Crew Neck Sweater ",
+    description: "Large",
+    category: "clothing",
+    price: 35,
+    inventory: 100,
+    image: "https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 7,
+    name: "Knitted Sweater ",
+    description: "small",
+    category: "clothing",
+    price: 25,
+    inventory: 50,
+    image: "https://images.pexels.com/photos/7765972/pexels-photo-7765972.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    id: 8,
+    name: "FireTacos Birria",
+    description: "The best food truck in West Seattle",
     category: "food",
     price: 20,
     inventory: 50,
-    image: photoAlpaca,
+    image: "https://images.pexels.com/photos/8448331/pexels-photo-8448331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+
+    id: 9,
+    name: "Pupusaria",
+    description: "Salvadorian Cuisine",
+    category: "food",
+    price: 20,
+    inventory: 50,
+    image: "https://images.pexels.com/photos/9216207/pexels-photo-9216207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+  {
+
+    id: 10,
+    name: "Little Italy",
+    description: "Italian Cuisine",
+    category: "food",
+    price: 20,
+    inventory: 50,
+    image: "https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+
+  },
+  {
+
+    id: 11,
+    name: "Pho 99",
+    description: "The best Pho place in West Seattle",
+    category: "food",
+    price: 20,
+    inventory: 50,
+    image: "https://images.pexels.com/photos/2591594/pexels-photo-2591594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 export const categoryTabs = [
@@ -50,6 +128,7 @@ export const categoryTabs = [
     title: 'Clothing',
     value: 'clothing',
   },
+
   {
     id: 3,
     title: 'Food',
