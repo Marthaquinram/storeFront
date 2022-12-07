@@ -22,7 +22,7 @@ const styles = {
     width: '15%',
     margin: '15px 30px',
     minWidth: '200px',
-    boxShadow: '10px 10px 30px rgba(0, 0, 0, 0.1)',
+    boxShadow: '5px 5px 20px #e28743',
     padding: '10px',
   },
   CardContent: {
@@ -43,14 +43,16 @@ const styles = {
 
 function Products() {
   const dispatch = useDispatch();
+  //dispatch is used when you want to update the state (initial state object)
   function addItemToCart(item) {
     console.log('Hey this is ITEM added to Cart: ', item);
     //disptach is targeting the functions we make inside of slices.
     dispatch(cartSlice.actions.addToCartItems(item))
   }
+  // this is selecting the piece of state from the prodSlice, and grabbing the listOfCategory state
   const products = useSelector(state => state.products.listOfCategory);
   let results = [];
-  console.log('current state in products', results);
+  // console.log('current state in products', results);
   if (products.length > 0) {
     results = products.map((items, index) =>
       <Card key={index} sx={styles.card}>
@@ -60,18 +62,18 @@ function Products() {
             <Typography align='center'>
               {items.name}
             </Typography>
-            <Typography variant='h5' align='center'>
+            <Typography variant='h9' align='center'>
               Price: ${items.price}
             </Typography>
-            <Typography variant='h5' align='center'>
+            <Typography variant='h9' align='center'>
               Qty: {items.inventory}
             </Typography>
           </Box>
         </CardContent>
         <CardActions sx={styles.CardButton}>
-          <Button onClick={() => addItemToCart(items)} value={items} variant="contained" color="primary" size='small'>Buy</Button>
+          <Button onClick={() => addItemToCart(items)} value={items} color="primary" size='small'>Add to Cart</Button>
           <Link to={`/details/${items.id}`} value={items} style={{ textDecoration: 'none' }}>
-            <Button variant="contained" color="primary" size='small'>Details</Button>
+            <Button color="primary" size='small'>Details</Button>
           </Link>
         </CardActions>
       </Card>

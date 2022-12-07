@@ -4,7 +4,7 @@ import { data as listOfCategory } from '../../components/storeFront/data';
 
 
 const initialState = {
-  category: '',
+  category: 'electronics',
   listOfCategory
 }
 
